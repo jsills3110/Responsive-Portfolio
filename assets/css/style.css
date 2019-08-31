@@ -85,7 +85,7 @@ h6 {
 
 /*Zero out the margin and padding that is default on ul, so that positioning is custom.*/
 ul {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -200,20 +200,17 @@ footer {
   margin: 30px 0 0;
 }
 
-/*On the header container, center the container and set the width. This allows the title 
-  and menu to be aligned with the main content.*/
+/*On the header container, center the container.*/
 #header-container {
   margin: 0 auto;
 }
 
-/*On the title container, float the container left, set the width and background color, and 
-  align the text center.*/
+/*On the title container, align the text center.*/
 #title-div {
   text-align: center;
 }
 
-/*On the menu container, set float right and set the margin-top and margin-right to position 
-  it on the header.*/
+/*On the menu container, set the margins and set the width to the width of the content.*/
 #menu {
   margin: 20px auto;
   width: fit-content;
@@ -231,42 +228,49 @@ footer {
   margin-top: 25px;
 }
 
+/*For screens up to 639px...*/
 @media screen and (max-width: 639px) {  
+  
+  /*Remove the default margin of h1 and set the padding.*/
   h1 {
     margin: 0;
     padding: 21px 0;
   }
 }
 
+/*For screens 640px wide and up...*/
 @media screen and (min-width: 640px) {
+  
+  /*Set the margin and width of the main content.*/
   main {
     margin: 125px auto 105px;
     width: 580px;
   }
 
+  /*Fix the header and set the height.*/
   header {
     position: fixed;
     height: 80px;
   }
 
+  /*Set the width of the header container, so that it is centered with the main content.*/
   #header-container {
     width: 620px;
   }
 
-  /*On the title container, float the container left, set the width and background color, and 
-  align the text center.*/
+  /*On the title container, float the container left and set the width.*/
   #title-div {
     float: left;
     width: 250px;
   }
 
-  /*On the menu container, set float right and set the margin-top and margin-right to position 
-  it on the header.*/
+  /*On the menu container, set float right and set the margin-top.*/
   #menu {
     float: right;
     margin-top: 30px;
   }
 
+  /*Set the project-section width.*/
   #project-section {
     width: 600px;
   }
@@ -284,11 +288,15 @@ footer {
   }
 }
 
+/*For screens 768px wide and up...*/
 @media screen and (min-width: 768px) {
+  
+  /*Set the margin and width of the main content.*/
   main {
     width: 620px;
   }
 
+  /*Set the width of the header container, so that it is centered with the main content.*/
   #header-container {
     width: 660px;
   }
@@ -306,11 +314,15 @@ footer {
   }
 }
 
+/*For screens 980px wide and up...*/
 @media screen and (min-width: 980px) {
+  
+  /*Set the margin and width of the main content.*/
   main {
     width: 920px;
   }
 
+  /*Set the width of the header container, so that it is centered with the main content.*/
   #header-container {
     width: 960px;
   }
