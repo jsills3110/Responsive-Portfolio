@@ -192,6 +192,10 @@ footer {
   width: 250px;
   margin-right: 30px;
   margin-bottom: 30px;
+  -webkit-animation-name: slide-in;
+  -webkit-animation-duration: 1s;
+  animation-name: slide-in;
+  animation-duration: 1s;
 }
 
 /*Project container contains the gallery of projects; set the width and margin.*/
@@ -226,6 +230,32 @@ footer {
 /*On the first part of the about paragraph, set the margin-top to push it down from the divider.*/
 #about-pp {
   margin-top: 25px;
+}
+
+/*A slide in animation that fades an object in while sliding it from bottom to top.*/
+@-webkit-keyframes slide-in {
+  from {
+    opacity: 0;
+    margin-top: 20px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+/*A slide in animation that fades an object in while sliding it from bottom to top.*/
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    margin-top: 20px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
 
 /*For screens up to 639px...*/
